@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateurs Quantiques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #4ecdc4;
+            --secondary-color: #f8cb2e;
+            --background-dark: #1e1e2f;
+            --background-light: #ffffff;
+            --text-dark: #e0e0e0;
+            --text-light: #333333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+            padding: 1em 0;
+            text-align: center;
+            position: fixed;
+            top: -100px;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: top 0.5s ease-in-out;
+        }
+
+        header:hover {
+            top: 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+            color: var(--text-dark);
+        }
+
+        header nav {
+            margin-top: 1em;
+        }
+
+        header nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        header nav a:hover {
+            background-color: var(--secondary-color);
+            color: var(--background-dark);
+            transform: scale(1.1);
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            background: var(--primary-color);
+            color: var(--background-dark);
+            border: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--secondary-color);
+        }
+
+        main {
+            padding: 2em;
+            padding-top: 150px;
+        }
+
+        section {
+            margin-bottom: 4em;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            overflow: hidden;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: var(--primary-color);
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: var(--background-dark);
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            background: var(--background-dark);
+            color: var(--text-dark);
+            padding: 2em 0;
+            margin-top: 2em;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ordinateurs Quantiques</h1>
+        <nav>
+            <a href="#definition">Définition</a>
+            <a href="#applications">Applications</a>
+            <a href="#technologies">Technologies clés</a>
+            <a href="#en-savoir-plus">En savoir plus</a>
+        </nav>
+        <button class="theme-toggle">Mode Clair</button>
+    </header>
+
+    <main>
+        <section id="definition">
+            <h2>Qu'est-ce qu'un ordinateur quantique ?</h2>
+            <p>Les ordinateurs quantiques utilisent les principes de la mécanique quantique pour résoudre des problèmes complexes inaccessibles aux ordinateurs classiques.</p>
+            <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/a/9/a/a9ad8a6dab_118683_ordinateur-quantique-erik-lucero.jpg" alt="Ordinateur quantique">
+        </section>
+
+        <section id="applications">
+            <h2>Applications potentielles</h2>
+            <ul>
+                <li>Amélioration de la sécurité des données grâce à la cryptographie avancée.</li>
+                <li>Optimisation des réseaux logistiques et des transports.</li>
+                <li>Découverte rapide de nouveaux médicaments.</li>
+                <li>Simulation de matériaux complexes pour des innovations technologiques.</li>
+            </ul>
+        </section>
+
+        <section id="technologies">
+            <h2>Technologies clés</h2>
+            <ul>
+                <li><strong>Superposition :</strong> Permet à un qubit d’être dans plusieurs états simultanément.</li>
+                <li><strong>Intrication :</strong> Relie plusieurs qubits pour effectuer des calculs massifs en parallèle.</li>
+                <li><strong>Interférence quantique :</strong> Aide à optimiser les résultats pour une précision maximale.</li>
+            </ul>
+        </section>
+
+        <section id="en-savoir-plus">
+            <h2>En savoir plus</h2>
+            <p>Explorez des ressources pour approfondir vos connaissances :</p>
+            <ul>
+                <li><a href="https://www.ibm.com/quantum-computing/" target="_blank">IBM Quantum Computing</a></li>
+                <li><a href="https://research.google/teams/applied-science/quantum/" target="_blank">Google Quantum AI</a></li>
+                <li><a href="https://www.quantum.com/" target="_blank">Quantum.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <button class="scroll-to-top">↑</button>
+
+    <footer>
+        <p>&copy; 2024 Ordinateurs Quantiques - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const root = document.documentElement;
+        const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+        // Mode clair/sombre
+        themeToggle.addEventListener('click', () => {
+            const isDark = root.style.getPropertyValue('--background-dark') === '#1e1e2f';
+            root.style.setProperty('--background-dark', isDark ? '#ffffff' : '#1e1e2f');
+            root.style.setProperty('--text-dark', isDark ? '#333333' : '#e0e0e0');
+            themeToggle.textContent = isDark ? 'Mode Sombre' : 'Mode Clair';
+        });
+
+        // Bouton "Retour en haut"
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
